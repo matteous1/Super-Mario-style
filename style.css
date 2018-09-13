@@ -1,0 +1,171 @@
+body {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background1 {
+  width: 4000px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  background: #42d9f4;
+}
+
+.cloud1 {
+  background: url(/fancycv/images/cloud.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 20%;
+  left: 350px;
+}
+
+.cloud2 {
+  background: url(/fancycv/images/cloud.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 30%;
+  left: 1000px;
+}
+
+.cloud3 {
+  background: url(/fancycv/images/cloud.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 40%;
+  left: 2000px;
+}
+
+.cloud4 {
+  background: url(/fancycv/images/cloud.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 20%;
+  left: 2500px;
+}
+
+.tree1 {
+  background: url(/fancycv/images/tree.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  bottom: 140px;
+  left: 200px;
+}
+
+.tree2 {
+  background: url(/fancycv/images/tree.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 200px;
+  height: 333px;
+  bottom: 140px;
+  left: 300px;
+}
+
+.tree3 {
+  background: url(/fancycv/images/tree.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 250px;
+  height: 417px;
+  bottom: 140px;
+  left: 1100px;
+}
+
+.tree4 {
+  background: url(/fancycv/images/tree.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  bottom: 140px;
+  left: 1700px;
+}
+
+.ground {
+  background: url(/fancycv/images/ground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 4000px;
+  height: 150px;
+  bottom: 0;
+  left: 0;
+}
+
+#matteo-container {
+  position: absolute;
+  left: 50%;
+  bottom: 140px;
+}
+
+#matteo-character {
+  position: relative;
+  left: -50%;
+  width: 150px;
+  height: 200px;
+  overflow: hidden;
+}
+
+#matteo-walking {
+  background: url(/fancycv/images/matteo-walking.png);
+  background-position-x: 0px;
+  position: absolute;
+  height: 200px;
+  width: 300px;
+  left: 0;
+  top: 0;
+}
+
+#matteo-walking.back {
+  background-position-x: -275px;
+}
+
+#matteo-walking.movement {
+    animation-name: moving;
+    animation-duration: 0.50s;
+		animation-iteration-count: infinite;
+		animation-timing-function: step-start;
+}
+
+#matteo-walking.movementback {
+    animation-name: movingback;
+    animation-duration: 0.50s;
+		animation-iteration-count: infinite;
+		animation-timing-function: step-start;
+}
+
+@keyframes moving {
+    0% { background-position: 0 0;}
+    50% { background-position: -150px 0;}
+		100% { background-position: 0 0;}
+}
+
+@keyframes movingback {
+    0% { background-position: -275px 0;}
+    50% { background-position: 200px 0;}
+		100% { background-position: -275px 0;}
+}
